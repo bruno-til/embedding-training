@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>😃Bruno - Back To School 2 in London</title>
+  </head>
+  <body>
+    <h1>Welcome to my Back To School Week Page!!</h1>
+
+    <h2>Resources</h2>
+    <div>
+      <script
+        type="module"
+        src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"
+      ></script>
+
+      <fieldset id="first_row_of_buttons">
+        <legend>Filter the View</legend>
+        <input type="button" value="Oregon and Washington Only!" id="onw" />
+        <input type="button" value="Clear Filter" id="clear" />
+        <input type="button" value="Undo" id="undo" />
+      </fieldset>
+
+      <tableau-viz
+        id="tableauViz"
+        src="https://public.tableau.com/views/Superstore_embedded_800x800/Overview"
+        toolbar="bottom"
+        hide-tabs
+        height="900px"
+        width="800px"
+      >
+      </tableau-viz>
+      <script src="app.js"></script>
+      <li>Tableau Embedding Tableau REST API</li>
+      <li>Tableau REST API</li>
+    </div>
+  </body>
+</html>
